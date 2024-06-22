@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react'
-import './ExploreMenu.css'
-import { menu_list } from '../../assets/assets'
+import { useEffect, useRef } from 'react';
+import './ExploreMenu.css';
+import { menu_list } from '../../assets/assets';
 
-const ExploreMenu = (categorie, setCategorie) => {
+const ExploreMenu = (category, setCategory) => {
     const listRef = useRef(null);
 
     useEffect(() => {
@@ -26,9 +26,9 @@ const ExploreMenu = (categorie, setCategorie) => {
                 <div className="explore-menu-list" ref={listRef}>
                     {infiniteList.map((item, index) => {
                         return (
-                            <div onClick={() => setCategorie(prev => prev === item.menu_name ? "Tout" : item.menu_name)} key={index} className='explore-menu-list-item'>
-                                <div className='explore-menu-image-wrapper'>
-                                    <img className={categorie === item.menu_name ? "active" : ""} src={item.menu_image} alt={item.menu_name} />
+                            <div onClick={() => setCategory(prev => prev === item.menu_name ? "Tout" : item.menu_name)} key={index} className='explore-menu-list-item'>
+                                <div className={`explore-menu-image-wrapper ${category === item.menu_name ? "active" : ""}`}>
+                                    <img className={category === item.menu_name ? "active" : ""} src={item.menu_image} alt={item.menu_name} />
                                 </div>
                                 <p>{item.menu_name}</p>
                             </div>
