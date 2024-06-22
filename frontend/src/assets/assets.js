@@ -20,7 +20,9 @@ import rating_starts from './rating-stars.png'
 import add from './add_icon.png'
 import remove_icon from './remove_icon_red.png'
 import add_icon from './add_icon_green.png'
-
+import facebook_icon from './icon_facebook.png'
+import instagram_icon from './icon_instagram.png'
+import pinterest_icon from './icon_pinterest.png'
 
 export const assets = {
     logo,
@@ -44,7 +46,10 @@ export const assets = {
     rating_starts,
     add,
     remove_icon,
-    add_icon
+    add_icon,
+    facebook_icon,
+    instagram_icon,
+    pinterest_icon
 }
 
 export const menu_list = [

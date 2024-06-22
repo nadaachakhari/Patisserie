@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import './ExploreMenu.css';
 import { menu_list } from '../../assets/assets';
 
-const ExploreMenu = (category, setCategory) => {
+const ExploreMenu = ({ category, setCategory }) => {
     const listRef = useRef(null);
 
     useEffect(() => {

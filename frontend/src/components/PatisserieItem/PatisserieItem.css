@@ -50,7 +50,7 @@
 
 .patisserie-item-info {
     padding: 16px;
-    position: relative; /* Pour positionner le compteur */
+    position: relative;
 }
 
 .patisserie-item-name-rating {
@@ -67,7 +67,7 @@
 }
 
 .patisserie-item-name-rating img {
-    width: 70px; /* Adjust size as needed */
+    width: 70px;
     height: auto;
 }
 
@@ -86,7 +86,7 @@
 .patisserie-item-counter {
    
     padding: 5px 10px;
-    border-radius: 25px; /* Ajusté pour un look de pilule */
+    border-radius: 25px; 
     color: #fff;
     font-size: 18px;
     font-weight: bold;
